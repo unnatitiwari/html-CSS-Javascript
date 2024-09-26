@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multipage Eduction website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav>
+        <img src="images/logo.svg" alt="" />
+        <div class="navigation">
+            <ul>
+                <i id="close-menu" class="fa-solid fa-xmark"></i>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Cources</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="./images/menu.png" alt="">
+        </div>
+    </nav>
+    <!-- home page -->
+    <section id="homepage">
+        <h1>Contact us</h1>
+    </section>
+
+    <!-- contact part -->
+
+    <section id="contact">
+        <div class="getin">
+            <h1>Get in touch</h1>
+            <p>looking for help? fill the form and start a new adventure</p>
+
+            <div class="headquaters">
+                <h3>Headquaters</h3>
+                <div class="c-detail">
+                    <i class="fas fa-house"></i>
+                    <p>744 New York Ave,brooklyan,Kings,New York <br>10224</p>
+                </div>
+
+            </div>
+            <div class="phone">
+                <h3>Phone</h3>
+                <div class="c-detail">
+                    <i class="fas fa-phone"></i>
+                    <p>(+645) 345 678 123<br>(+605) 345 667 005</p>
+                </div>
+            </div>
+            <div class="support">
+                <h3>Support</h3>
+                <div class="c-detail">
+                    <i class="fas fa-house"></i>
+                    <p>TechEduca@support.com<br>help@educa.com</p>
+                </div>
+            </div>
+            <div class="follow">
+                <h3>Fellow Us</h3>
+                <div class="logo">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h4>Let's Connect</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, non.</p>
+            <div class="form-row">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email">
+            </div>
+            <div class="form-col">
+                <input type="text" placeholder="Subject">
+            </div>
+
+            <div class="form-col">
+                <textarea name="" id="" cols="30" rows="8" placeholder="How can we help?"></textarea>
+            </div>
+            <div class="form-col">
+                <button>Send Message</button>
+            </div>
+        </div>
+    </section>
+    <!-- map -->
+    <section id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21572620.777232222!2d65.0075706385188!3d21.13505529681416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1717316638461!5m2!1sen!2sin"
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Peputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Job</li>
+            <li>Brand Assets</li>
+            <li>Inverstor Relatiopn</li>
+            <li>Terms of Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Peputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. we only send promo offers.</p>
+            <div class="subscribe">
+                <input type="email" placeholder="Your Email Address" />
+                <a href="#">SUBSCRIBE</a>
+            </div>
+
+        </div>
+
+        <!-- copyright footer -->
+        <div class="copyright">
+            <p>
+                Copyright @2021 All rights reserved | This template is made by Tech2etc
+            </p>
+            <div class="logo">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+    </footer>
+
+
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .navigation ul').addClass('active')
+        })
+        $('#close-menu').click(function () {
+            $('nav .navigation ul').removeClass('active')
+        })
+
+    </script>
+</body>
+
+</html>
